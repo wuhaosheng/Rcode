@@ -1,0 +1,122 @@
+* using log directory 'F:/Rbao/xmlcreate.Rcheck'
+* using R version 3.6.1 (2019-07-05)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: CP936
+* using options '--no-manual --as-cran'
+* checking for file 'xmlcreate/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'xmlcreate' version '0.1.0'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking serialization versions ... OK
+* checking whether package 'xmlcreate' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking for future file timestamps ... OK
+* checking DESCRIPTION meta-information ... WARNING
+Non-standard license specification:
+  What license is it under?
+Standardizable: FALSE
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... WARNING
+Found the following file with non-ASCII characters:
+  hello.R
+Portable packages must use only ASCII characters in their R code,
+except perhaps in comments.
+Use \uxxxx escapes for other characters.
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... WARNING
+'library' or 'require' calls not declared from:
+  'dplyr' 'tidyr'
+'library' or 'require' calls in package code:
+  'dplyr' 'tidyr'
+  Please use :: or requireNamespace() instead.
+  See section 'Suggested packages' in the 'Writing R Extensions' manual.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+XML_Made : TrajGenerate: no visible global function definition for
+  'filter'
+XML_Made : TrajGenerate: no visible binding for global variable 'h'
+XML_Made : TrajGenerate: no visible binding for global variable 'ID'
+XML_Made : TrajGenerate: no visible global function definition for
+  'group_by'
+XML_Made : TrajGenerate: no visible global function definition for
+  'group_indices'
+XML_Made : TrajGenerate: no visible global function definition for
+  'unite'
+XML_Made : TrajGenerate: no visible binding for global variable
+  'index_cc'
+XML_Made : TrajGenerate: no visible global function definition for
+  'summarise'
+XML_Made : TrajGenerate: no visible global function definition for 'n'
+XML_Made : TrajGenerate: no visible global function definition for
+  'plot'
+XML_Made : TrajGenerate: no visible binding for global variable
+  'abstime'
+XML_Made : TrajGenerate: no visible binding for global variable 't1'
+XML_Made : TrajGenerate: no visible binding for global variable 't2'
+XML_Made : TrajGenerate: no visible binding for global variable
+  'abstime_e'
+XML_Made : TrajGenerate: no visible binding for global variable
+  'abstime_s'
+XML_Made: no visible global function definition for 'group_by'
+XML_Made: no visible binding for global variable 'index'
+XML_Made: no visible global function definition for 'summarise'
+XML_Made: no visible global function definition for 'n'
+Undefined global functions or variables:
+  ID abstime abstime_e abstime_s filter group_by group_indices h index
+  index_cc n plot summarise t1 t2 unite
+Consider adding
+  importFrom("graphics", "plot")
+  importFrom("stats", "filter")
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd line widths ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  'XML_Made'
+All user-level objects in a package should have documentation entries.
+See chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
+* checking for code/documentation mismatches ... WARNING
+Functions or methods with usage in documentation object 'hello' but not in code:
+  'hello'
+
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... ERROR
+Running examples in 'xmlcreate-Ex.R' failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: hello
+> ### Title: Hello, World!
+> ### Aliases: hello
+> 
+> ### ** Examples
+> 
+> hello()
+Error in hello() : could not find function "hello"
+Execution halted
+* DONE
+Status: 1 ERROR, 5 WARNINGs, 1 NOTE
