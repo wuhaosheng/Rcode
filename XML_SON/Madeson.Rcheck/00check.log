@@ -1,0 +1,108 @@
+* using log directory 'F:/XML_SON/Madeson.Rcheck'
+* using R version 3.6.1 (2019-07-05)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: CP936
+* using options '--no-manual --as-cran'
+* checking for file 'Madeson/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'Madeson' version '0.1.0'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking serialization versions ... OK
+* checking whether package 'Madeson' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking for future file timestamps ... OK
+* checking DESCRIPTION meta-information ... WARNING
+Non-standard license specification:
+  What license is it under?
+Standardizable: FALSE
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... WARNING
+Found the following file with non-ASCII characters:
+  hello.R
+Portable packages must use only ASCII characters in their R code,
+except perhaps in comments.
+Use \uxxxx escapes for other characters.
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking dependencies in R code ... WARNING
+'library' or 'require' calls not declared from:
+  'dplyr' 'plyr' 'sf' 'stringr' 'tidyr'
+'library' or 'require' calls in package code:
+  'dplyr' 'plyr' 'sf' 'stringr' 'tidyr'
+  Please use :: or requireNamespace() instead.
+  See section 'Suggested packages' in the 'Writing R Extensions' manual.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+made_son: no visible global function definition for 'xmlToList'
+made_son: no visible global function definition for 'xmlParse'
+made_son: no visible global function definition for 'xmlRoot'
+made_son: no visible global function definition for 'xmlSize'
+made_son: no visible global function definition for 'st_point'
+made_son: no visible global function definition for 'st_linestring'
+made_son: no visible global function definition for 'st_sfc'
+made_son: no visible global function definition for 'st_as_sf'
+made_son: no visible global function definition for 'unite'
+made_son: no visible global function definition for 'group_by'
+made_son: no visible binding for global variable 'OD'
+made_son: no visible binding for global variable 'time'
+made_son: no visible global function definition for 'summarise'
+made_son: no visible global function definition for 'n'
+made_son: no visible global function definition for 'filter'
+made_son: no visible binding for global variable 'count'
+Undefined global functions or variables:
+  OD count filter group_by n st_as_sf st_linestring st_point st_sfc
+  summarise time unite xmlParse xmlRoot xmlSize xmlToList
+Consider adding
+  importFrom("stats", "filter", "time")
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd line widths ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  'made_son'
+All user-level objects in a package should have documentation entries.
+See chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
+* checking for code/documentation mismatches ... WARNING
+Functions or methods with usage in documentation object 'hello' but not in code:
+  'hello'
+
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... ERROR
+Running examples in 'Madeson-Ex.R' failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: hello
+> ### Title: Hello, World!
+> ### Aliases: hello
+> 
+> ### ** Examples
+> 
+> made_son(1)
+Error: package or namespace load failed for 'sf' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'class'
+Execution halted
+* DONE
+Status: 1 ERROR, 5 WARNINGs, 1 NOTE
